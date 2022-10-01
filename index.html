@@ -8,40 +8,17 @@
     </head>
     <body>
         <style>
-            .img
+            div
             {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;
-            }
-            .column
-            {
-                float: left;
-                width: 33.33%;
-                padding: 5px;
-            }
-            .row::after
-            {
-                content: "";
-                clear: both;
-                display: table;
+            display: flex;
+            justify-content: space-between;
             }
         </style>
         <h2 align = "center">Spiacente, ci piacciono le bambine</h2>
-        <!--<img src = "images/IMG_5319.JPG" class = "img">
-        <img src = "images/Lugiano.jpg" class = "img">
-        <img src = "images/IMG_5320.JPG" class = "img">-->
-        <div class = "row">
-            <div class = "column">
-                <img src = "images/IMG_5319.JPG" style = "width: 100%">
-            </div>
-            <div class = "column">
-                <img src = "images/Lugiano.jpg" style = "width: 100%">
-            </div>
-            <div class = "column">
-                <img src = "images/IMG_5320.JPG" style = "width: 100%">
-            </div>
+        <div>
+            <img src = "images/IMG_5319.JPG"> 
+            <img src = "Lugiano.jpg">
+            <img src = "images/IMG_5320.JPG">
         </div>
     </body>
 </html>
