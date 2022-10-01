@@ -8,17 +8,30 @@
     </head>
     <body>
         <style>
-            div
+            .column
             {
-            display: flex;
-            justify-content: space-between;
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+            }
+            .row::after
+            {
+                content: "";
+                clear: both;
+                display: table;
             }
         </style>
         <h2 align = "center">Spiacente, ci piacciono le bambine</h2>
-        <div>
-            <img src = "images/IMG_5319.JPG" style = "width: 100%"> 
-            <img src = "Lugiano.jpg" style = "width: 100%">
-            <img src = "images/IMG_5320.JPG" style = "width: 100%">
+        <div class="row">
+            <div class = "column">
+                <img src="images/IMG_5319.JPG">
+            </div>
+            <div class = "column">
+                <img src="images/Lugiano.jpg">
+            </div>
+            <div class = "column">
+                <img src="images/IMG_5320_JPG">
+            </div>
         </div>
     </body>
 </html>
